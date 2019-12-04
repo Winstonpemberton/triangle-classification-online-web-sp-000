@@ -14,10 +14,10 @@ class Triangle
 
     if side_1 == side_2 && side_1 == side_3 && side_2 == side_3
       :equilateral
-    elsif side_1 != side_2 && side_1 != side_3 && side_2 != side_3
+    elsif side_1 == side_2 || side_1 == side_3 || side_3 = side_2 
       :isosceles
       #binding.pry
-    elsif side_1 == side_2 || side_1 == side_3 || side_3 = side_2
+    elsif side_1 != side_2 && side_1 != side_3 && side_2 != side_3
       :scalene
     #  binding.pry
     else
