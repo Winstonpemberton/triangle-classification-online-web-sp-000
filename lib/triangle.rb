@@ -20,12 +20,12 @@ class Triangle
     else
       if side_1 <= 0 || side_2 <=0 || side_3 <= 0
         raise
-        
-      
+
+
   end
 
   class TriangleError < StandardError
-    def message 
+    def message
       puts "Incorrect side measurement passed"
     end
   end
