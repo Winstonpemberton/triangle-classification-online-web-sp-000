@@ -25,10 +25,14 @@ class Triangle
           puts error.message
       end
     end
+  end
 
   class TriangleError < StandardError
+    
     def message
       puts "Incorrect side measurement passed"
     end
+    
   end
+  
 end
