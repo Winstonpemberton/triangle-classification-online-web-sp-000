@@ -22,19 +22,19 @@ class Triangle
     #  binding.pry
     else
       if side_1 <= 0 || side_2 <=0 || side_3 <= 0
-        begin
+        #begin
           raise TriangleError
-        rescue TriangleError => error
-          puts error.message
-        end
+        # rescue TriangleError => error
+        #   puts error.message
+        # end
       end
     end
   end
   class TriangleError < StandardError
 
-    def message
-      puts "Incorrect side measurement passed"
-    end
+    # def message
+    #   puts "Incorrect side measurement passed"
+    # end
 
   end
 
