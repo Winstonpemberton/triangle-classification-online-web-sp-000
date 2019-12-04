@@ -19,7 +19,7 @@ class Triangle
       :scalene
     else
       if side_1 <= 0 || side_2 <=0 || side_3 <= 0
-        begin 
+        begin
           raise TriangleError
         rescue TriangleError => error
           puts error.message
