@@ -28,8 +28,10 @@ class Triangle
         #   puts error.message
         # end
       elsif side_1 + side_2 <= side_3 || side_1 + side_3 <= side_2 || side_2 + side_3 <= side_1
-      end
+        raise TriangleError
+      end  
     end
+    
   end
   class TriangleError < StandardError
 
